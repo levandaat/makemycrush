@@ -1,0 +1,103 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+
+    /* Phông chữ */
+}
+
+.gradient-background {
+    background: linear-gradient(to right, hsl(61, 85%, 79%), #ff5e62); /* Gradient background */
+    animation: animatedBackground 10s linear infinite alternate; /* Áp dụng animation */
+}
+
+/* Animation for background */
+@keyframes animatedBackground {
+    from {
+        background-position: 0 0; /* Bắt đầu từ vị trí 0 */
+    }
+    to {
+        background-position: 100% 0; /* Kết thúc ở vị trí 100% */
+    }
+}
+
+
+.container {
+    text-align: center;
+}
+
+#gifContainerImg {
+    width: 60%;
+    height: 60%;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 20px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+}
+
+#siBtn {
+    background-color: #009705;
+    color: white;
+}
+
+#noBtn {
+    background-color: #FF5733;
+    color: white;
+}
+
+#siBtn:hover {
+    background-color: #053a03;
+}
+
+#noBtn:hover {
+    background-color: #641e0d;
+}
+
+.bg-green {
+    background-color: #ffffff;
+}
+
+#messageContainer {
+    font-size: 30px;
+    color: #418dff;
+    text-shadow: 2px 5px 5px #ffffff;
+    animation: pulse 0.5s infinite alternate;
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.3);
+    }
+}
+
+/* Animation for background */
+@keyframes animatedBackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
+}
+
+/* Apply animation to body */
+body {
+    animation: animatedBackground 20s linear infinite alternate;
+}
+
+/* CSS để giữ trang hiển thị trong một trang màn hình */
+.full-height {
+    height: 100vh;
+    overflow: hidden;
+}
